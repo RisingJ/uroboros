@@ -1,4 +1,4 @@
-A plugin for loading a phonegap app from from within a phonegap app
+A plugin for loading a phonegap app from within a phonegap app
 
 
 To install using plugman
