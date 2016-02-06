@@ -27,8 +27,8 @@
     <!-- ios -->
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
-            <feature name="">
-                <param name="ios-package" value="" />
+            <feature name="MultiViewController">
+                <param name="ios-package" value="RJMultiViewController"/>
             </feature>
         </config-file>
         <header-file src="src/ios/MultiViewController.h" />
