@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-      id="com.risingj.cordova.uroboros"
+      id="risingj-cordova-uroboros"
       version="0.1.0">
     <name>uroboros - CordovaViewControl</name>
     <description>Cordova / PhoneGap plugin for loading PhoneGap content from within a PhoneGap app</description>
@@ -14,7 +13,7 @@
     <js-module src="www/CordovaViewControl.js">
         <clobbers target="CordovaViewControl" />
     </js-module>
-    
+
     <!-- android -->
     <!--<platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
@@ -25,41 +24,16 @@
         <source-file src="" target-dir="" />
     </platform> -->
 
-    <!-- amazon-fireos -->
-    <!--<platform name="amazon-fireos">
-        <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="" >
-                <param name="android-package" value=""/>
-            </feature>
-        </config-file>
-        <source-file src="" target-dir="" />
-    </platform> -->
-    
-    <!-- ubuntu -->
-    <!-- <platform name="ubuntu">
-        <header-file src="" />
-        <source-file src="" />
-    </platform> -->
-
     <!-- ios -->
-    <!-- <platform name="ios">    
+    <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="">
-                <param name="ios-package" value="" /> 
+                <param name="ios-package" value="" />
             </feature>
         </config-file>
-        <header-file src="" />
-	    <source-file src="" />
-    </platform> -->
-
-    <!-- blackberry10 -->
-    <!-- <platform name="blackberry10">
-    <source-file src="" target-dir="" />
-        <config-file target="www/config.xml" parent="/widget">
-            <feature name="" value=""/>
-        </config-file>
-    </platform> -->
-
+        <header-file src="src/ios/MultiViewController.h" />
+	    <source-file src="src/ios/MultiViewController.m" />
+    </platform>
 
     <!-- wp8 -->
     <platform name="wp8">
@@ -70,5 +44,5 @@
         </config-file>
         <source-file src="src/wp/CordovaViewControl.cs" />
     </platform>
-    
+
 </plugin>
